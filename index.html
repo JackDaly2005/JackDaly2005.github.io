@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jack Daly | IT &amp; Systems Administration</title>
+<meta name="description" content="Jack Daly, Cyber Computer Information Technology student at Ball State University (May 2027). IT intern, self-hosted homelab builder: Docker, Tailscale, Home Assistant, monitoring, and backups.">
+<meta name="theme-color" content="#0b0f17">
+<meta property="og:title" content="Jack Daly | IT &amp; Systems Administration">
+<meta property="og:description" content="Resume and homelab portfolio: zero-trust self-hosted infrastructure, automation, and IT support.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">jack<span>@</span>daly:~$</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#homelab">Homelab</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="resume.pdf">Resume PDF</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">// IT &amp; systems administration · networking · automation</p>
+    <h1>John &ldquo;Jack&rdquo; C. Daly III</h1>
+    <p class="lead">Cyber Computer Information Technology student at Ball State University (graduating May 2027) with school-district IT internship experience. I design and run a zero-trust, self-hosted homelab with 29 containerized services, monitoring, automated backups, and self-healing automation.</p>
+    <div class="meta">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Muncie, IN</span>
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:johncdaly2005@gmail.com">johncdaly2005@gmail.com</a></span>
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><a href="https://www.linkedin.com/in/john-daly-iii/" rel="noopener">linkedin.com/in/john-daly-iii</a></span>
+    </div>
+    <div class="btns">
+      <a class="btn primary" href="resume.pdf" download>Download resume (PDF)</a>
+      <a class="btn" href="#homelab">See the homelab project</a>
+      <a class="btn" href="mailto:johncdaly2005@gmail.com">Email me</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2><span class="n">01</span>About</h2>
+    <p class="sub">What I bring to an IT, networking, or systems role.</p>
+    <div class="grid g3">
+      <div class="card"><h3>Hands-on IT support</h3><p class="org">Imaged and deployed Windows laptops with Microsoft Intune, repaired Chromebooks district-wide, and helped with firewall and network closet work during a school-district IT internship.</p></div>
+      <div class="card"><h3>Infrastructure I run myself</h3><p class="org">I designed and operate a homelab on an Apple M2 Mac mini and a Raspberry Pi 5: Docker, Tailscale, DNS, Home Assistant, Plex, monitoring, and backups, all on 8 GB of RAM.</p></div>
+      <div class="card"><h3>People skills</h3><p class="org">Customer-facing work since 2021. I've trained new team members, built a structured training program, and stayed calm through peak-hour rushes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2><span class="n">02</span>Experience</h2>
+    <p class="sub">Most recent first.</p>
+
+    <div class="job">
+      <div class="when">May 2026 – Jul 2026</div>
+      <div>
+        <h3>Information Technology Intern</h3>
+        <p class="org">Muncie Community Schools IT Department · Muncie, IN</p>
+        <ul class="tight">
+          <li>Imaged and prepared Windows laptops for deployment, including Microsoft Intune enrollment and device configuration.</li>
+          <li>Updated, tested, repaired, and organized student Chromebooks so they were ready for use across the district.</li>
+          <li>Assisted IT staff with firewall installation and configuration, network closet work, and classroom technology projects.</li>
+          <li>Took part in weekly IT meetings, vendor discussions, and a cybersecurity conference on current threats and future technology needs.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="when">Ongoing</div>
+      <div>
+        <h3>Homelab Designer &amp; Operator <span class="tag">personal project</span></h3>
+        <p class="org">Self-hosted infrastructure · Muncie, IN</p>
+        <ul class="tight">
+          <li>Run 29 containerized services plus native workloads on an Apple M2 Mac mini, with admin interfaces reachable only over a Tailscale mesh VPN.</li>
+          <li>Built automated backups, monitoring, and a self-healing container watchdog with push alerts. <a href="#homelab">Full write-up below.</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="when">May 2023 – Present</div>
+      <div>
+        <h3>Barista</h3>
+        <p class="org">Rosebud Coffee House · Muncie, IN</p>
+        <ul class="tight">
+          <li>Deliver friendly, consistent customer service and build rapport with regulars.</li>
+          <li>Track supplies and report shortages to management so the shop stays stocked.</li>
+          <li>Created a structured, blended training program that combines hands-on practice, mentorship, and clear expectations for new staff.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="when">Jun 2021 – Jun 2023</div>
+      <div>
+        <h3>Crew Member</h3>
+        <p class="org">AMC Theatres · Muncie, IN</p>
+        <ul class="tight">
+          <li>Trained new team members on procedures, customer service, and sales.</li>
+          <li>Managed customer queues during peak hours to help reduce wait times.</li>
+          <li>Resolved guest issues promptly and professionally.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2><span class="n">03</span>Technical skills</h2>
+    <p class="sub">Tools I use day to day, at work and in my lab.</p>
+    <div class="grid g3">
+      <div class="card skillcat"><h3>Systems &amp; platforms</h3><div class="chips"><span class="chip">Docker</span><span class="chip">Docker Compose</span><span class="chip">macOS admin</span><span class="chip">Linux admin</span><span class="chip">launchd</span><span class="chip">Raspberry Pi</span></div></div>
+      <div class="card skillcat"><h3>Networking &amp; security</h3><div class="chips"><span class="chip">Tailscale</span><span class="chip">Zero-trust access</span><span class="chip">DNS / AdGuard Home</span><span class="chip">Firewall basics</span><span class="chip">Network closets</span></div></div>
+      <div class="card skillcat"><h3>End-user IT</h3><div class="chips"><span class="chip">Windows imaging</span><span class="chip">Microsoft Intune</span><span class="chip">Chromebook support</span><span class="chip">Hardware repair</span></div></div>
+      <div class="card skillcat"><h3>Scripting &amp; dev</h3><div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Bash</span><span class="chip">Git</span><span class="chip">REST APIs</span></div></div>
+      <div class="card skillcat"><h3>Monitoring &amp; backup</h3><div class="chips"><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Uptime Kuma</span><span class="chip">ntfy</span><span class="chip">restic</span></div></div>
+      <div class="card skillcat"><h3>Automation &amp; AI</h3><div class="chips"><span class="chip">Home Assistant</span><span class="chip">NFC automations</span><span class="chip">Ollama / local LLMs</span><span class="chip">Plex</span></div></div>
+    </div>
+    <p class="sub" style="margin-top:18px"><strong style="color:var(--text)">Soft skills:</strong> customer service, training &amp; mentoring, clear communication, staying calm under pressure.</p>
+  </div>
+</section>
+
+<section id="homelab">
+  <div class="wrap">
+    <h2><span class="n">04</span>Featured project: self-hosted homelab</h2>
+    <p class="sub">A zero-trust home lab I designed, built, and operate. Details that could identify the network (addresses, hostnames, URLs, credentials) are left out on purpose.</p>
+
+    <div class="grid g4 metrics">
+      <div class="card"><div class="metric">29</div><div class="metric-l">containers running, plus native Plex, Ollama &amp; a FastAPI app</div></div>
+      <div class="card"><div class="metric">8&nbsp;GB</div><div class="metric-l">host RAM; Docker VM capped near 4&nbsp;GB</div></div>
+      <div class="card"><div class="metric">VPN-only</div><div class="metric-l">admin access, with UIs bound to localhost</div></div>
+      <div class="card"><div class="metric">2 pages</div><div class="metric-l">public surface, both PIN-protected</div></div>
+    </div>
+
+    <h3 style="margin-top:30px">Overview</h3>
+    <p>The lab delivers media, home automation, DNS, and household web apps from hardware I administer myself. The main host is an <strong>Apple Mac mini (M2, 8 GB)</strong> running macOS. Docker Desktop provides a memory-capped Linux VM for most services. Plex, a local LLM runtime (Ollama), and a custom <strong>FastAPI</strong> command center run natively. A <strong>Raspberry Pi 5</strong> hosts a companion command-center project and is reachable only over the mesh VPN.</p>
+    <p>The design priority is <strong>least-privilege remote access</strong>. Admin interfaces listen on localhost and are reachable only through Tailscale. The public internet sees just two small, PIN-protected pages.</p>
+
+    <div class="card diagram" role="img" aria-label="Architecture diagram: household devices reach the Mac mini through the home LAN for DNS and media, through the Tailscale overlay for administration, and through Tailscale Funnel for two PIN-protected public pages. Tailscale also reaches the Raspberry Pi 5. The Mac mini runs a Docker Desktop VM, native services, and data protection jobs.">
+      <svg viewBox="0 0 900 450" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+        <defs>
+          <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6b84a8"/></marker>
+          <linearGradient id="gm" x1="0" x2="1"><stop offset="0" stop-color="#4cc2ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+        </defs>
+        <g stroke="#6b84a8" stroke-width="1.6" fill="none" marker-end="url(#ar)">
+          <path d="M450 66 L150 118"/><path d="M450 66 L450 118"/><path d="M450 66 L750 118" stroke-dasharray="6 5"/>
+          <path d="M150 176 L300 238"/><path d="M450 176 L400 238"/><path d="M470 176 L700 238"/><path d="M750 176 L500 238" stroke-dasharray="6 5"/>
+          <path d="M360 300 L165 358"/><path d="M360 300 L450 358"/><path d="M360 300 L735 358"/>
+        </g>
+        <g font-size="11" fill="#9fb0c8">
+          <text x="235" y="86" text-anchor="middle">DNS &amp; streaming</text>
+          <text x="458" y="98">admin / remote</text>
+          <text x="660" y="86" text-anchor="middle">public pages</text>
+          <text x="805" y="214" text-anchor="middle">proxied to localhost</text>
+        </g>
+        <g font-size="14" font-weight="600" fill="#e6edf6" text-anchor="middle">
+          <rect x="350" y="10" width="200" height="56" rx="12" fill="#131b2a" stroke="#3a4f73"/>
+          <text x="450" y="34">Household devices</text>
+          <text x="450" y="53" font-size="11" font-weight="400" fill="#9fb0c8">laptops · phones · TVs</text>
+
+          <rect x="40" y="120" width="220" height="56" rx="12" fill="#131b2a" stroke="#3a4f73"/>
+          <text x="150" y="144">Home LAN</text>
+          <text x="150" y="163" font-size="11" font-weight="400" fill="#9fb0c8">local DNS (AdGuard) · media</text>
+
+          <rect x="340" y="120" width="220" height="56" rx="12" fill="#10233a" stroke="#4cc2ff"/>
+          <text x="450" y="144">Tailscale overlay</text>
+          <text x="450" y="163" font-size="11" font-weight="400" fill="#9fb0c8">mesh VPN · all admin access</text>
+
+          <rect x="640" y="120" width="220" height="56" rx="12" fill="#131b2a" stroke="#3a4f73" stroke-dasharray="6 5"/>
+          <text x="750" y="144">Funnel exception</text>
+          <text x="750" y="163" font-size="11" font-weight="400" fill="#9fb0c8">2 PIN-protected pages only</text>
+
+          <rect x="200" y="240" width="320" height="60" rx="12" fill="#131b2a" stroke="url(#gm)" stroke-width="2"/>
+          <text x="360" y="265">Mac mini · Apple M2 · 8 GB</text>
+          <text x="360" y="285" font-size="11" font-weight="400" fill="#9fb0c8">primary host · macOS · launchd jobs</text>
+
+          <rect x="640" y="240" width="220" height="60" rx="12" fill="#131b2a" stroke="#3a4f73"/>
+          <text x="750" y="265">Raspberry Pi 5</text>
+          <text x="750" y="285" font-size="11" font-weight="400" fill="#9fb0c8">companion command center</text>
+
+          <rect x="40" y="360" width="250" height="74" rx="12" fill="#131b2a" stroke="#3a4f73"/>
+          <text x="165" y="386">Docker Desktop VM</text>
+          <text x="165" y="405" font-size="11" font-weight="400" fill="#9fb0c8">~4 GB cap · 29 containers</text>
+          <text x="165" y="421" font-size="11" font-weight="400" fill="#3ddc97">auto-heal watchdog</text>
+
+          <rect x="325" y="360" width="250" height="74" rx="12" fill="#131b2a" stroke="#3a4f73"/>
+          <text x="450" y="386">Native services</text>
+          <text x="450" y="405" font-size="11" font-weight="400" fill="#9fb0c8">Plex · Ollama</text>
+          <text x="450" y="421" font-size="11" font-weight="400" fill="#9fb0c8">FastAPI command center</text>
+
+          <rect x="610" y="360" width="250" height="74" rx="12" fill="#131b2a" stroke="#3a4f73"/>
+          <text x="735" y="386">Data protection</text>
+          <text x="735" y="405" font-size="11" font-weight="400" fill="#9fb0c8">consistent volume snapshots</text>
+          <text x="735" y="421" font-size="11" font-weight="400" fill="#9fb0c8">restic · offsite copy</text>
+        </g>
+      </svg>
+    </div>
+
+    <h3>Services by category</h3>
+    <div class="grid g3" style="margin-top:12px">
+      <div class="card svc"><h3>Access &amp; DNS</h3><p>Tailscale mesh VPN for all administration; AdGuard Home as the household DNS resolver, with its admin UI kept off the LAN.</p></div>
+      <div class="card svc"><h3>Platform</h3><p>Docker Desktop (memory-capped Linux VM), Docker Compose stacks, Portainer, and macOS launchd for native services and schedules.</p></div>
+      <div class="card svc"><h3>Command centers</h3><p>A custom FastAPI progressive web app as the lab dashboard, a companion app on the Pi, and a Discord bot backed by a local LLM (Ollama).</p></div>
+      <div class="card svc"><h3>Home automation</h3><p>Home Assistant with a Matter bridge, a local voice pipeline (Whisper, Piper, openWakeWord), NFC tag automations, and TV integrations.</p></div>
+      <div class="card svc"><h3>Media &amp; files</h3><p>Plex Media Server with an automated request-and-organize pipeline (Radarr, Sonarr, Prowlarr, Bazarr), Immich for photos, and File Browser.</p></div>
+      <div class="card svc"><h3>Household apps</h3><p>Vaultwarden (password manager), Mealie (meals and grocery lists), and a few custom web apps I built.</p></div>
+      <div class="card svc"><h3>Observability</h3><p>Uptime Kuma, Prometheus, Grafana, node and container exporters, and a WAN speed tracker.</p></div>
+      <div class="card svc"><h3>Alerting &amp; automation</h3><p>Self-hosted ntfy push alerts, launchd jobs for backups and reports, and an auto-healing watchdog.</p></div>
+      <div class="card svc"><h3>Backups</h3><p>Nightly consistent snapshots of container data, config copies rotated to the Pi, and restic for local and offsite backups.</p></div>
+    </div>
+
+    <h3 style="margin-top:30px">Security approach</h3>
+    <ul class="tight" style="margin-top:8px">
+      <li><strong>Localhost binding.</strong> Admin and app UIs listen only on localhost on the host. That includes Home Assistant, DNS admin, Grafana, Portainer, and the media consoles.</li>
+      <li><strong>Mesh VPN for admin.</strong> Tailscale is the only way to reach those consoles, at home or away. I don't forward any ports for admin interfaces.</li>
+      <li><strong>Small public surface.</strong> Tailscale Funnel exposes only two small, PIN-protected pages. Those apps still bind to localhost, with forwarded-header controls on the proxy path.</li>
+      <li><strong>Split DNS.</strong> AdGuard Home serves the LAN while its own admin page stays VPN-only.</li>
+      <li><strong>Secrets hygiene.</strong> Credentials live in a self-hosted password manager and stay out of logs, chat, and alerts. The auto-heal alerts scrub secrets before sending.</li>
+    </ul>
+
+    <h3 style="margin-top:30px">New: self-healing containers <span class="tag">auto-heal</span></h3>
+    <div class="grid g2" style="margin-top:12px">
+      <div class="card">
+        <p style="margin-top:0">A Python watchdog run by launchd every 3 minutes. It checks the lab's containers and repairs failures on its own, carefully.</p>
+        <ul class="tight">
+          <li>Triggers when a container is unhealthy or crashed, or when Uptime Kuma reports it down 3 checks in a row.</li>
+          <li>Restarts only containers on an <strong>allowlist</strong>, <strong>once</strong>, then verifies the container actually came back.</li>
+          <li><strong>Rate limited</strong> to one restart per container per hour. It never undoes a container I stopped on purpose.</li>
+          <li>Sends an <strong>ntfy</strong> push with before and after logs, <strong>scrubbed of secrets</strong>.</li>
+          <li>Skips services that are intentionally off, and has a one-file pause switch.</li>
+        </ul>
+      </div>
+      <pre class="code">every 3 min (launchd)
+ └─ for each allowlisted container
+     ├─ healthy?            → skip
+     ├─ stopped by me?      → skip
+     ├─ restarted &lt; 1h ago? → skip + alert
+     └─ unhealthy / exited / Kuma down x3
+         ├─ capture logs (before)
+         ├─ docker restart  (once)
+         ├─ verify running + healthy
+         ├─ capture logs (after)
+         └─ ntfy push  (secrets scrubbed)</pre>
+    </div>
+
+    <h3 style="margin-top:30px">New: NFC tag automations <span class="tag">Home Assistant</span></h3>
+    <p>I set up Home Assistant tag-scanned automations so that tapping an NFC sticker with my phone triggers a scene. One tag by the bed runs a goodnight routine that turns off the lights and the TV. Another starts a movie-mode lighting scene. One opens the grocery list, and a couple more toggle room lights. Each tag is written with the Home Assistant Companion app and only fires for a phone signed in to my Home Assistant, so a guest tapping a tag does nothing.</p>
+
+    <h3 style="margin-top:30px">Problems I've solved</h3>
+    <div class="grid" style="margin-top:12px">
+      <div class="card prob"><div><div class="k">Problem</div><p>Remote Home Assistant access broke after an upstream change stopped honoring YAML proxy settings.</p></div><div><div class="k">Fix</div><p>Applied trusted-proxy settings in the running HTTP configuration and restored VPN access without exposing the UI publicly.</p></div></div>
+      <div class="card prob"><div><div class="k">Problem</div><p>A secondary DNS resolver stalled clients whenever its host was offline.</p></div><div><div class="k">Fix</div><p>Removed it from the VPN nameserver list so queries failed over cleanly to the primary, and documented how to re-add it.</p></div></div>
+      <div class="card prob"><div><div class="k">Problem</div><p>Copying live Docker volumes (including SQLite databases) with a plain archive risks corrupt backups.</p></div><div><div class="k">Fix</div><p>Wrote snapshot tooling that uses a temporary container sharing the service mounts, so backups stay consistent without restarts.</p></div></div>
+      <div class="card prob"><div><div class="k">Problem</div><p>An 8 GB host will swap or run out of memory if every stack runs at once.</p></div><div><div class="k">Fix</div><p>Capped the Docker VM near 4 GB, scheduled the photo library overnight, and kept heavy ML workloads off. Media and automation stay up.</p></div></div>
+      <div class="card prob"><div><div class="k">Problem</div><p>Containers that crash overnight stay down until someone notices.</p></div><div><div class="k">Fix</div><p>Built the allowlisted auto-heal watchdog with verification, rate limits, and secret-scrubbed alerts.</p></div></div>
+    </div>
+
+    <h3 style="margin-top:30px">Project highlights</h3>
+    <ol class="bullets">
+      <li>Designed and operate a zero-trust homelab of 29 containerized services plus native workloads on an 8 GB Apple M2 Mac mini, with admin UIs bound to localhost and reachable only over a mesh VPN.</li>
+      <li>Implemented least-privilege remote access: household DNS and media stay on the LAN, management stays VPN-only, and only two PIN-protected pages are public.</li>
+      <li>Built automated backup and observability pipelines with consistent Docker volume snapshots, restic, Prometheus, Grafana, Uptime Kuma, and push alerts, plus memory-aware scheduling on constrained hardware.</li>
+      <li>Wrote a Python self-healing watchdog that restarts allowlisted containers once with verification, rate limits, and secret-scrubbed ntfy alerts.</li>
+      <li>Developed a FastAPI progressive web app command center, a Discord bot backed by a local LLM, and Home Assistant automations including NFC tag triggers.</li>
+      <li>Diagnosed and fixed reverse-proxy trust, DNS failover, and live-volume backup issues without exposing admin interfaces publicly.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2><span class="n">05</span>Education</h2>
+    <div class="job" style="border:0">
+      <div class="when">Aug 2023 – May 2027</div>
+      <div>
+        <h3>Ball State University</h3>
+        <p class="org">B.S., Cyber Computer Information Technology · Muncie, IN · Expected May 2027</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Open to IT support, systems administration, and networking roles. Reach me at <a href="mailto:johncdaly2005@gmail.com">johncdaly2005@gmail.com</a> or on <a href="https://www.linkedin.com/in/john-daly-iii/" rel="noopener">LinkedIn</a>.</p>
+    <p class="no-print">Hand-written static HTML &amp; CSS. No trackers, no build step.</p>
+  </div>
+</footer>
+</body>
+</html>

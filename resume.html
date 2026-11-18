@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Jack Daly Resume</title>
+<style>
+@page{size:Letter;margin:0.42in 0.5in}
+body{font:9.8pt/1.33 "Helvetica Neue",Arial,"Liberation Sans",sans-serif;color:#111;margin:0}
+h1{font-size:20pt;margin:0;letter-spacing:-.01em}
+.contact{color:#333;margin:3px 0 0}
+.contact a{color:#0a58ca;text-decoration:none}
+.title{color:#0a58ca;font-weight:600;margin:2px 0 0}
+h2{font-size:10.5pt;text-transform:uppercase;letter-spacing:.09em;color:#0a58ca;border-bottom:1.4px solid #0a58ca;padding-bottom:2px;margin:10px 0 5px}
+.row{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.row b{font-size:10.5pt}.row span{color:#444;white-space:nowrap;font-size:9.5pt}
+.org{color:#333;font-style:italic;margin:0 0 2px}
+ul{margin:2px 0 7px;padding-left:16px}li{margin:1.5px 0}
+.sk{margin:2px 0}.sk b{display:inline-block;min-width:150px}
+</style></head><body>
+<h1>John &ldquo;Jack&rdquo; C. Daly III</h1>
+<p class="title">IT Support · Systems Administration · Networking</p>
+<p class="contact">Muncie, IN · <a href="mailto:johncdaly2005@gmail.com">johncdaly2005@gmail.com</a> · <a href="https://www.linkedin.com/in/john-daly-iii/">linkedin.com/in/john-daly-iii</a></p>
+
+<h2>Education</h2>
+<div class="row"><b>Ball State University, Muncie, IN</b><span>Aug 2023 – May 2027 (expected)</span></div>
+<p class="org">Bachelor of Science, Cyber Computer Information Technology</p>
+
+<h2>Technical Skills</h2>
+<p class="sk"><b>Systems &amp; platforms:</b> Docker, Docker Compose, macOS and Linux administration, launchd, Raspberry Pi</p>
+<p class="sk"><b>Networking &amp; security:</b> Tailscale / zero-trust access, DNS (AdGuard Home), firewall and network closet basics</p>
+<p class="sk"><b>End-user IT:</b> Windows imaging, Microsoft Intune enrollment and configuration, Chromebook support and repair</p>
+<p class="sk"><b>Scripting &amp; dev:</b> Python, FastAPI, Bash, Git, REST APIs</p>
+<p class="sk"><b>Monitoring &amp; backup:</b> Prometheus, Grafana, Uptime Kuma, ntfy, restic</p>
+<p class="sk"><b>Automation &amp; AI:</b> Home Assistant (incl. NFC tag automations), Ollama / local LLMs, Plex</p>
+<p class="sk"><b>Soft skills:</b> Customer service, training and mentoring, communication</p>
+
+<h2>Experience</h2>
+<div class="row"><b>Information Technology Intern</b><span>May 2026 – Jul 2026</span></div>
+<p class="org">Muncie Community Schools IT Department, Muncie, IN</p>
+<ul>
+<li>Imaged and prepared Windows laptops for deployment, including Microsoft Intune enrollment and device configuration.</li>
+<li>Updated, tested, repaired, and organized student Chromebooks so they were ready for use across the district.</li>
+<li>Assisted IT staff with firewall installation and configuration, network closet work, and classroom technology projects.</li>
+<li>Took part in weekly IT meetings, vendor discussions, and a cybersecurity conference on current threats and future technology needs.</li>
+</ul>
+<div class="row"><b>Barista</b><span>May 2023 – Present</span></div>
+<p class="org">Rosebud Coffee House, Muncie, IN</p>
+<ul>
+<li>Deliver friendly, consistent customer service and track supplies, reporting shortages to management.</li>
+<li>Created a structured, blended training program combining hands-on practice, mentorship, and clear expectations.</li>
+</ul>
+<div class="row"><b>Crew Member</b><span>Jun 2021 – Jun 2023</span></div>
+<p class="org">AMC Theatres, Muncie, IN</p>
+<ul>
+<li>Trained new team members on procedures, customer service, and sales; managed peak-hour queues to reduce wait times.</li>
+</ul>
+
+<h2>Project: Self-Hosted Homelab</h2>
+<div class="row"><b>Designer &amp; Operator</b><span>Ongoing</span></div>
+<ul>
+<li>Designed and operate a zero-trust homelab of 29 containerized services plus native workloads on an 8 GB Apple M2 Mac mini and a Raspberry Pi 5, with admin UIs bound to localhost and reachable only over a Tailscale mesh VPN.</li>
+<li>Limited the public surface to two PIN-protected pages; household DNS (AdGuard Home) and media stay on the LAN.</li>
+<li>Built backup and observability pipelines: consistent Docker volume snapshots, restic, Prometheus, Grafana, Uptime Kuma, and ntfy alerts, with memory-aware scheduling on constrained hardware.</li>
+<li>Wrote a Python self-healing watchdog (launchd) that restarts allowlisted containers once with verification, rate limits, and secret-scrubbed alerts.</li>
+<li>Developed a FastAPI web app command center, a Discord bot on a local LLM (Ollama), and Home Assistant automations including NFC tag triggers.</li>
+<li>Fixed reverse-proxy trust, DNS failover, and live-volume backup issues without exposing admin interfaces publicly.</li>
+</ul>
+</body></html>
